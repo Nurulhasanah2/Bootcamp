@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+<title> Tugas 2 </title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background: grey;
+    }
+
+    h1 {
+        color: white;
+        text-align: center;
+    }
+
+    img {
+        height: 700px;
+        weight: 600px;
+    }
+
+    /* Create two equal columns that floats next to each other */
+    .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        height: 100px;
+        /* Should be removed. Only for demonstration */
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    input[type=text],
+    select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=submit] {
+        width: 50%;
+        background-color: #d8ddd8;
+        color: rgb(22, 16, 16);
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+
+    .container {
+        border-radius: 5px;
+        padding: 20px;
+    }
+</style>
+
+<body>
+    <main class="container">
+        <div class="row" id="kotak1">
+            <div class="column">
+                <img src="aset/logo.jpg">
+
+            </div>
+            <div class="column" id="kotak2">
+                <div class="container" style="background-color: blue; margin:10%; ">
+                    <form>
+                        <h1> CHECKOUT </h1>
+                        <input type="text" placeholder="Card Name"> <br>
+                        <input type="text" placeholder="Card Number"> <br>
+                        <input type="text" placeholder="Verification Name"> <br>
+                        <div class="row">
+                            <div class="column">
+                                <input type="text" placeholder="Expire data">
+                            </div>
+                            <div class="column">
+                                <input type="text" placeholder="cvv">
+                            </div>
+                        </div>
+                        <input type="submit" value="Complete Order" class=" w-100 btn-success btn-lg btn-block">
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </main>
+
+
+
+</body>
+
+</html>
