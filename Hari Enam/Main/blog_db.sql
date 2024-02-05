@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Feb 05, 2024 at 03:50 PM
+-- Generation Time: Feb 06, 2024 at 12:43 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.0.28
 
@@ -31,6 +31,17 @@ CREATE TABLE `Categories` (
   `category_id` int(11) NOT NULL,
   `category_name` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `Categories`
+--
+
+INSERT INTO `Categories` (`category_id`, `category_name`) VALUES
+(1, 'Musik'),
+(2, 'Politik'),
+(3, 'Education'),
+(4, 'Film'),
+(5, 'International');
 
 -- --------------------------------------------------------
 
@@ -65,14 +76,9 @@ CREATE TABLE `post` (
 --
 
 INSERT INTO `post` (`id`, `judul`, `content`, `category_id`, `image`) VALUES
-(1, 'nurul', 'cakakf', 'fil', 'safa'),
-(2, 'Tenggelam Kapal Van der Wijk', 'Film', 'Ilmiah', 'tes'),
-(3, 'jahfaf', 'fasjflasfja', 'cakfaflka', 'ajnfla'),
-(4, 'jahfaf', 'fasjflasfja', 'cakfaflka', 'ajnfla'),
-(5, 'Tsunami Aceh', 'Berita', 'Ilmiah', 'aceh.jpg'),
-(6, 'Lala', 'sdakdmas', 'fkasnkalf', 'fnsaalf'),
-(7, 'Nama', 'nalkjf;awfa', 'sfjals', 'asfma;f'),
-(8, 'Nama', 'nalkjf;awfa', 'sfjals', 'asfma;f');
+(8, 'Nama', 'nalkjf;awfa', 'sfjals', 'asfma;f'),
+(9, 'Pemilu semakin dekat', 'fmnasfnalfnalkf', 'Politik', 'fsfs'),
+(10, 'GGJKBL', 'JBJN,K', 'JNLK', ' B LJL');
 
 -- --------------------------------------------------------
 
@@ -132,7 +138,7 @@ ALTER TABLE `posts`
 -- AUTO_INCREMENT for table `post`
 --
 ALTER TABLE `post`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
